@@ -27,9 +27,10 @@ class ViewController: UIViewController {
             tapCount = tapCount + 1
 
         print (tapCount)
-        
-        if tapCount > 10 {
-            theLabel.text = "That's More Than 10!"
+
+        //Adding a text change after 20 clicks
+        if tapCount > 20 {
+            theLabel.text = "That's More Than 20!"
         }
     }
     
