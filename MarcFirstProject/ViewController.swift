@@ -12,26 +12,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
         theLabel.text = "Hello There!" //changes my label theLabel text when button is pushed
+        
+        print(text1.text!)
+        print(text2.text!)
+        
     }
     
-    var tapCount = 0
-
+    
     
     @IBAction func buttonExercise(_ sender: Any) {
         theLabel.text = "Buttons Are Cool" //changes my label theLabel text when button is pushed
         print("Button Tapped") //show that the button was tapped in my debugger area
         
-            tapCount = tapCount + 1
-
-        print (tapCount)
-
-        //Adding a text change after 20 clicks
-        if tapCount > 20 {
-            theLabel.text = "That's More Than 20!"
-        }
     }
     
     override func viewDidLoad() {
