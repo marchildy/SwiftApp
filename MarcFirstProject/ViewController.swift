@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         theLabel.text = "Hello There!" //changes my label theLabel text when button is pushed
         
-        print(text1.text!)
-        print(text2.text!)
+    theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
         
     }
     
